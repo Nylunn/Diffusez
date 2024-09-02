@@ -1,0 +1,227 @@
+* { 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header {
+    height: 100vh;
+    width: 10vw;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.navbar{
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color:  #DBEBFD;
+}
+
+.navbar  a{
+    color: #003978;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+.navbar .nav-links ul {
+    display: flex;
+
+}
+
+.navbar .nav-links ul li {
+    margin: 20px;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 35px;    
+    right: 50px;
+}
+
+.others{
+    padding: 20px;
+    font-weight:bold;
+    color: #003978;
+    font-size: 15px;
+    position: flex;
+    width: auto;
+    
+    
+}
+
+.others .btn-menu{
+    display: flex;
+    
+    margin-top:-10px;
+}
+
+.others  ul {
+    display: flex;
+    width: 100%;
+}
+
+.others  ul li {
+    margin-top:10px;
+    width: 100%;
+    padding-left: 20px ;
+}
+
+.others .btn{
+    font-weight:bold;
+    font-size: 15px;
+    color: #003978;
+    height: 40px;
+    width: 180px;
+    border-radius: 6px;
+    background: #ffffff;
+    border-color: #003978;
+
+
+
+}
+
+.others .btn-2{
+    font-weight:bold;
+    font-size: 15px;
+    color: white;
+    height: 40px;
+    width: 170px;
+    border-radius: 6px;
+    background: #003978;
+    margin-left: 10px;
+
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+    .others {
+        padding: 0;
+        font-size: 10px;
+        width: 100%;
+        height: 100%;
+        margin-left: -110%;
+        transition: all 0.5s ease;
+    }
+
+    .others.mobile-menu2{
+        padding: 0;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .others  ul {
+        display: inline-block;
+        
+    }
+    
+    .others  ul li {
+        padding-top: 15px;
+        padding-left: 20px;
+        margin:0px;
+    }
+
+    .others .btn-menu{
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .others .btn{
+        font-weight:bold;
+        font-size: 20px;
+        color: #003978;
+        height: 80px;
+        width: 160px;
+        border-radius: 6px;
+        background: #ffffff;
+        border-color: #003978;
+        
+
+    
+    }
+    
+    .others .btn-2{
+        font-weight:bold;
+        font-size: 20px;
+        color: white;
+        height: 80px;
+        width: 160px;
+        border-radius: 6px;
+        background: #003978;
+        margin-left: -10px;
+    }
+
+
+
+    html{
+        width: 360px;
+        height: auto;
+    }
+    .navbar .logo{
+        position: absolute;
+        top:30px;
+        left: 220px;
+    }
+
+    .navbar{
+        padding: 0;
+        flex-direction:row-reverse;
+        margin-top: 20px;
+    }
+    .navbar .menu-hamburger{
+        display: flex;
+        padding-right: 260px;
+    }
+    .nav-links{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 90%;
+        justify-content:center;
+        align-items: center;
+        display: flex;
+        margin-left: -110%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        padding-top: 130px;
+        margin-left: 0;
+        width: 100%;    
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+        background-color: #DBEBFD;
+        width: 100%;
+    }
+    
+}
